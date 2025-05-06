@@ -82,51 +82,7 @@ news_collection/
 └── README.md             - 項目說明
 ```
 
-## 配置Git和上傳到GitHub
 
-如果你想將此項目上傳到自己的GitHub：
-
-1. 初始化Git倉庫（如果還未初始化）：
-```bash
-git init
-```
-
-2. 添加文件到Git：
-```bash
-git add .
-```
-
-3. 提交變更：
-```bash
-git commit -m "初始提交：新聞爬蟲工具"
-```
-
-4. 添加你的GitHub倉庫作為遠程倉庫：
-```bash
-git remote add origin https://github.com/你的用戶名/news_collection.git
-```
-
-5. 推送到GitHub：
-```bash
-git push -u origin master  # 或 git push -u origin main
-```
-
-## 注意事項
-
-- 此爬蟲僅供學習和研究使用，請勿用於商業目的
-- 請合理控制爬取頻率，避免對目標網站造成過大負擔
-- 網站結構可能會改變，若爬蟲失效，可能需要更新選擇器
-- 初次運行時，`webdriver-manager`會自動下載Chrome驅動，確保您的網絡連接正常
-
-## 常見問題解決
-
-1. **ChromeDriver相關問題**：
-   - 如果自動下載失敗，可以手動下載適合您Chrome版本的[ChromeDriver](https://chromedriver.chromium.org/downloads)
-   - 下載後修改程式碼指定ChromeDriver路徑
-
-2. **網絡訪問問題**：
-   - 確保您的網絡可以正常訪問目標網站
-   - 如果需要使用代理，可在`requests.get`方法中添加代理設定
 
 ## 依賴說明
 
